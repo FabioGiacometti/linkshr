@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400|Open+Sans&display=swap');
+
+:root{
+    --decorative: 'Muli';
+    --text: 'Open Sans';
+    --text-shadow: 5px 4px 2px #00000005; 
+}
+
+h1, li{
+    font-family: var(--decorative)
+}
+
+p, h2, h3{
+    font-family: var(--text);
+    font-weight: 100
+}
+
+h2 h3{
+    font-weight: 100;
+    color: #1c1c1c
+}
+
+h1{
+    font-size: 3em
+}
+
+a{
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+    font-size: 12px
+}
+
+.slider i{
+    font-size: 8em;
+    color: rgb(173, 230, 230)
+}
+
+.slider span{
+    font-family: var(--decorative);
+    font-size: 1.6em;
+    line-height: 0.9em;
+    margin-bottom: 20px 
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="animate.css">
+    <script
+      src="https://kit.fontawesome.com/c3c84e4d37.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>LinksHR</title>
+  </head>
+
+  <body>
+   
+    <header class="animated fadeIn">
+      <img src="images/LogoByN1Linea.png" alt="" class="logo animated fadeInDown" />
+      <ul class="animated fadeInRightBig">
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#soy">Soy Empresa</a></li>
+        <li><a href="#soy">Soy Profesional</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      
+      <img src="images/linkedin-brands.svg" class="animated fadeInRightBig" style="height: 22px;
+      filter: invert(2);"></img>
+    </header>
+   
+    <section id="nosotros" class="hero">
+      <article class="animated fadeInUp" id="nosotrosArticle" onscroll="scrol()">
+        <h1>
+          Welcome
+        </h1>
+        <h3>
+          Somos una consultora enfocada en lograr relaciones win-win entre
+          profesionales IT y las diferentes oportunidades de trabajo que existen
+          alrededor suyo. Reunimos a la persona con el trabajo soñado y a las
+          empresas con el talento deseado.
+        </h3>
+        <button>Contactanos</button>
+      </article>
+    </section>
+   
+    <section id="slider">
+      <h2>
+        Generamos el espacio para que Profesionales y empresas se encuentren.
+      </h2>
+      <div>
+        
+        <div class="card">
+          <div class="y-centered margin-top-bottom">
+            <img src="images/048-launch.svg" alt="">
+          </div>
+          <span>Somos Copados</span>
+          <p>
+            Somos re piola, unos chavones cebados y nos gusta hacer cosas re
+            copadas
+          </p>
+          <a href=""></a>
+        </div>
+        
+        <div class="card">
+          <div class="y-centered margin-top-bottom">
+            <img src="images/024-link.svg" alt="">
+          </div>
+          <span>Somos Importantes</span>
+          <p>
+            La cosa es que la gente sabe quienes somos, que generalmente no es
+            el caso de mucha otra gente
+          </p>
+          <a href=""></a>
+        </div>
+       
+        <div class="card">
+          <div class="y-centered margin-top-bottom">
+            <img src="images/050-analytics.svg" alt="">
+          </div>
+          <span .>Sabemos lo que hacemos</span> 
+          <p>
+            Posta que vamos a hacer cosas que ya hemos hecho varias veces antes
+          </p>
+          <a href=""></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="soy" >
+      <article id="empresa" class="amore">
+        <div>
+          <i class="fas fa-users"></i>
+          <h1 onclick="func()" style="cursor: pointer">
+              Soy Empresa
+          </h1>
+          <span>—</span>
+          <h3>
+            Diseñamos procesos de reclutamiento efectivos, ágiles y flexibles a
+            medida de nuestros clientes. Gráfico Capacitaciones Relevamiento
+            Entrevistas Reclutamiento Presentación de Cadidatos Feedback del
+            Mercado
+          </h3>
+          <button onclick="func()">Contactanos!</button>
+        </div>
+        <div class="form">
+          <form>
+            <legend>Contacto</legend>
+            <input class="input" name="name" type="text" placeholder="Nombre completo"/><br /> 
+            <textarea class="input" cols="30" rows="2" placeholder="Contanos un poco sobre Vos"></textarea><br /> 
+            <input name="democheckbox" type="checkbox" value="1" /> Deseo que me contactes telefonicamente<br /> 
+            <button type="submit" value="Submit">Submit</button>
+            
+          </form>
+        </div>
+      </article>
+      
+      <article id="profesional" class="joust">
+        <div>
+          <i class="fas fa-user-tie"></i>
+          <h1 onclick="func2()" style="cursor: pointer">
+            Soy Profesional <br>
+          </h1>
+          <span>—</span>
+          <h3>
+            Trabajamos con networking. Somos links entre profesionales y
+            oportunidades. No siempre estamos en búsqueda laboral activa pero lo
+            que no es para hoy puede ser para mañana.
+          </h3>
+          <button onclick="func2()">Contactanos!</button>
+        </div>
+        <div class="form">
+            <form>
+                <legend>Contacto</legend>
+                <input class="input" name="name" type="text" placeholder="Nombre completo"/><br /> 
+                <textarea class="input" cols="30" rows="2" placeholder="Contanos un poco sobre Vos"></textarea><br /> 
+                <input name="democheckbox" type="checkbox" value="1" /> Deseo que me contactes telefonicamente<br /> 
+                <button type="submit" value="Submit">Submit</button>
+              
+              </form>
+        </div>
+      </article>
+    </section>
+    <section id="contacto">
+      <h1>
+        TRABAJAMOS PARA VOS <br>CONECTEMOS!
+      </h1>
+      <button>Contacto</button>
+    </section>
+
+    <script>
+      let empresa = document.getElementById("empresa");
+      let profesional = document.getElementById("profesional");
+      let boton = document.getElementsByTagName("button");
+
+      function scrol(){
+        console.log("hola!");
+      }
+
+      function func() {
+        profesional.classList.toggle("escondido");
+        console.log(func);
+      }
+
+      function func2() {
+        profesional.classList.toggle("full");
+        empresa.classList.toggle("oscuro");
+        console.log(func2);
+      }
+
+    </script>
+  </body>
+</html>
