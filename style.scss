@@ -9,7 +9,7 @@ $border: 1px solid #d6c5c5;
 
 :root {
   /* Colores */
-  --gradient: linear-gradient(135deg, #03a9f495 0%, #e91e6395 50%);
+  --gradient: linear-gradient(135deg, #03a9f495 6%, #e91e63ab 110%)
 }
 
 body {
@@ -200,6 +200,13 @@ form {
   height: 100vh;
   background-color: #ff6b6b;
   transition: background-color 200ms right 500ms;
+  .fa-long-arrow-alt-left{
+    font-size: 2em;
+    left: 46%;
+    position: absolute;
+    color: white;
+    bottom: 24px;
+  }
 }
 
 #profesional {
