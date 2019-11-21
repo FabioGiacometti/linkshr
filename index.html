@@ -23,14 +23,20 @@
         alt=""
         class="logo animated fadeInDown"
       />
-      <ul class="animated fadeInRightBig">
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#soy">Soy Empresa</a></li>
-        <li><a href="#soy">Soy Profesional</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+      
+      <input id="nav-toggle" type="checkbox" class="nav-toggle"/>
+      
+      <ul id="navbar" class="animated fadeInRightBig">
+        <li><a href="#nosotros" onclick="hidenav()">Nosotros</a></li>
+        <li><a href="#soy" onclick="hidenav()">Soy Empresa</a></li>
+        <li><a href="#soy" onclick="hidenav()">Soy Profesional</a></li>
+        <li><a href="#contacto" onclick="hidenav()">Contacto</a></li>
       </ul>
 
-      <a href="https://www.linkedin.com/company/linkshr/" target="blank"
+      <label for="nav-toggle" class="nav-toggle-label" id="nav-toggle">
+        <span></span>
+      </label>
+      <a href="https://www.linkedin.com/company/linkshr/" class="linkedin" target="blank"
         ><img
           src="images/linkedin-brands.svg"
           class="animated fadeInRightBig"
@@ -54,7 +60,9 @@
           Somos una consultora enfocada en lograr relaciones win-win entre
           profesionales y empresas IT.
         </h3>
-        <a href="#contacto"><button>Contactanos</button></a>
+        <a href="#contacto">
+          <button>Contactanos</button>
+        </a>
       </article>
     </section>
 
@@ -62,47 +70,47 @@
       <h2>
         Generamos el espacio para que profesionales y empresas se encuentren
       </h2>
-      <div>
-        <div class="card">
-          <div class="y-centered margin-top-bottom">
-            <img src="images/048-launch.svg" alt="" />
-          </div>
-          <span>Somos ágiles. </span>
-          <br />
-          <span>—</span>
-          <p>
-            Elaboramos procesos flexibles y a medida de cada cliente.
-          </p>
-          <a href=""></a>
-        </div>
-
-        <div class="card">
-          <div class="y-centered margin-top-bottom">
-            <img src="images/026-3d-modeling.svg" alt="" />
-          </div>
-          <span>Somos especialistas </span>
-          <br />
-          <span>—</span>
-          <p>
-            Trabajamos exclusivamente en el sector IT
-          </p>
-          <a href=""></a>
-        </div>
-
-        <div class="card">
-          <div class="y-centered margin-top-bottom">
-            <img src="images/050-analytics.svg" alt="" />
-          </div>
-          <span>Somos estratégicos</span>
-          <br />
-          <span>—</span>
-          <p>
-            Elaboramos métricas del mercado. Tomamos decisiones en base a datos.
-          </p>
-          <a href=""></a>
-        </div>
-      </div>
-    </section>
+     
+        <ul>
+          <li class="card">
+            <div class="y-centered margin-top-bottom">
+              <img src="images/048-launch.svg" alt="" />
+            </div>
+            <span>Somos ágiles. </span>
+            <br />
+            <span>—</span>
+            <p>
+              Elaboramos procesos flexibles y a medida de cada cliente.
+            </p>
+            <a href=""></a>
+          </li>
+          <li class="card">
+            <div class="y-centered margin-top-bottom">
+              <img src="images/026-3d-modeling.svg" alt="" />
+            </div>
+            <span>Somos especialistas </span>
+            <br />
+            <span>—</span>
+            <p>
+              Trabajamos exclusivamente en el sector IT
+            </p>
+            <a href=""></a>
+          </li>
+          <li class="card">
+            <div class="y-centered margin-top-bottom">
+              <img src="images/050-analytics.svg" alt="" />
+            </div>
+            <span>Somos estratégicos</span>
+            <br />
+            <span>—</span>
+            <p>
+              Elaboramos métricas del mercado. Tomamos decisiones en base a
+              datos.
+            </p>
+            <a href=""></a>
+          </li>
+        </ul>
+      </section>
 
     <section id="soy">
       <article id="empresa" class="amore">
@@ -227,7 +235,7 @@
       /></a>
       <a href="mailto:hola@linkshr.com.ar"
         ><h3>
-          <span style="font-variant:small-caps">Email</span><br>
+          <span style="font-variant:small-caps">Email</span><br />
           hola@linkshr.com.ar
         </h3>
       </a>
@@ -288,6 +296,13 @@
           document.getElementById("logo").style.fontSize = "35px";
         }
       }
+
+      function hidenav() {
+  // if(screen.width <= 820px) {
+  let navToggle = document.getElementById("nav-toggle");
+  // }
+  navToggle.click();
+}
     </script>
   </body>
 </html>
