@@ -366,14 +366,20 @@ footer {
   }
   header{
     position: fixed!important;
+    z-index: 5;
     .linkedin{
       display:none;
-      position: absolute!important
+      position: absolute!important;
     }
   }
 
   #navbar {
     display: none;
+    padding-top: 50px;
+    li{
+      margin-bottom: 50px;
+      font-size: 2em
+    }
   }
 
   .nav-toggle:checked ~ #navbar {
@@ -382,11 +388,13 @@ footer {
     align-items: baseline;
     position: absolute!important;
     padding: 0px 0px 121px 86px;
-    top: 65px;
+    top: 80px;
     left: 0;
     height: 100vh;
     width: 100%;
     background-color: black;
+    align-items: center;
+    justify-content: flex-start;
   }
 
   .nav-toggle-label {

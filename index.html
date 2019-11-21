@@ -23,9 +23,9 @@
         alt=""
         class="logo animated fadeInDown"
       />
-      
-      <input id="nav-toggle" type="checkbox" class="nav-toggle"/>
-      
+
+      <input id="nav-toggle" type="checkbox" class="nav-toggle" />
+
       <ul id="navbar" class="animated fadeInRightBig">
         <li><a href="#nosotros" onclick="hidenav()">Nosotros</a></li>
         <li><a href="#soy" onclick="hidenav()">Soy Empresa</a></li>
@@ -36,7 +36,11 @@
       <label for="nav-toggle" class="nav-toggle-label" id="nav-toggle">
         <span></span>
       </label>
-      <a href="https://www.linkedin.com/company/linkshr/" class="linkedin" target="blank"
+
+      <a
+        href="https://www.linkedin.com/company/linkshr/"
+        class="linkedin"
+        target="blank"
         ><img
           src="images/linkedin-brands.svg"
           class="animated fadeInRightBig"
@@ -44,33 +48,33 @@
       filter: invert(2);"
       /></a>
     </header>
+    <div>
+      <section id="nosotros" class="hero">
+        <article
+          class="animated fadeInUp"
+          id="nosotrosArticle"
+          onscroll="scrol()"
+        >
+          <h1>
+            Welcome
+            <br />
+            <span class="guion">—</span>
+          </h1>
+          <h3>
+            Somos una consultora enfocada en lograr relaciones win-win entre
+            profesionales y empresas IT.
+          </h3>
+          <a href="#contacto">
+            <button>Contactanos</button>
+          </a>
+        </article>
+      </section>
 
-    <section id="nosotros" class="hero">
-      <article
-        class="animated fadeInUp"
-        id="nosotrosArticle"
-        onscroll="scrol()"
-      >
-        <h1>
-          Welcome
-          <br />
-          <span class="guion">—</span>
-        </h1>
-        <h3>
-          Somos una consultora enfocada en lograr relaciones win-win entre
-          profesionales y empresas IT.
-        </h3>
-        <a href="#contacto">
-          <button>Contactanos</button>
-        </a>
-      </article>
-    </section>
+      <section id="slider">
+        <h2>
+          Generamos el espacio para que profesionales y empresas se encuentren
+        </h2>
 
-    <section id="slider">
-      <h2>
-        Generamos el espacio para que profesionales y empresas se encuentren
-      </h2>
-     
         <ul>
           <li class="card">
             <div class="y-centered margin-top-bottom">
@@ -112,51 +116,106 @@
         </ul>
       </section>
 
-    <section id="soy">
-      <article id="empresa" class="amore">
-        <div>
-          <i class="fas fa-users"></i>
-          <h1 onclick="func()" style="cursor: pointer">
-            Soy Empresa
-          </h1>
-          <span>—</span>
-          <h3>
-            Diseñamos procesos de reclutamiento efectivos, ágiles y flexibles a
-            medida de nuestros clientes.
-          </h3>
-          <button id="buttonEmpresa" onclick="func()">Ver Mas</button>
-        </div>
-        <i class="fas fa-long-arrow-alt-left" onclick="func()"></i>
-        <div class="form">
-          <img src="images/graficoempresa.png" onclick="func()" alt="" />
-        </div>
-      </article>
+      <section id="soy">
+        <article id="empresa" class="amore">
+          <div>
+            <i class="fas fa-users"></i>
+            <h1 onclick="func()" style="cursor: pointer">
+              Soy Empresa
+            </h1>
+            <span>—</span>
+            <h3>
+              Diseñamos procesos de reclutamiento efectivos, ágiles y flexibles
+              a medida de nuestros clientes.
+            </h3>
+            <button id="buttonEmpresa" onclick="func()">Ver Mas</button>
+          </div>
+          <i class="fas fa-long-arrow-alt-left" onclick="func()"></i>
+          <div class="form">
+            <img src="images/graficoempresa.png" onclick="func()" alt="" />
+          </div>
+        </article>
 
-      <article id="profesional" class="joust">
-        <div>
-          <i class="fas fa-user-tie"></i>
-          <h1 onclick="func2()" style="cursor: pointer">
-            Soy Profesional <br />
-          </h1>
-          <span>—</span>
-          <h3>
-            Trabajamos con networking. Somos links entre profesionales y
-            oportunidades.
-          </h3>
+        <article id="profesional" class="joust">
+          <div>
+            <i class="fas fa-user-tie"></i>
+            <h1 onclick="func2()" style="cursor: pointer">
+              Soy Profesional <br />
+            </h1>
+            <span>—</span>
+            <h3>
+              Trabajamos con networking. Somos links entre profesionales y
+              oportunidades.
+            </h3>
 
-          <button id="buttonProfesional" onclick="func2()">Ver Mas</button>
-        </div>
-        <div class="form">
+            <button id="buttonProfesional" onclick="func2()">Ver Mas</button>
+          </div>
+          <div class="form">
+            <p>
+              No siempre estamos en búsqueda laboral activa pero lo que no es
+              para hoy puede ser para mañana.
+            </p>
+            <p>
+              No hace falta que cargues tu CV, escríbenos y nosotros nos
+              encargamos del resto
+            </p>
+            <form>
+              <legend>Contacto</legend>
+              <input
+                class="input"
+                name="name"
+                type="text"
+                placeholder="Nombre completo"
+              /><br />
+              <textarea
+                class="input"
+                cols="30"
+                rows="2"
+                placeholder="Contanos un poco sobre vos"
+              ></textarea
+              ><br />
+              <input name="democheckbox" type="checkbox" value="1" /> Deseo que
+              me contactes telefonicamente<br />
+              <button type="submit" value="Submit">Submit</button>
+            </form>
+            <i class="fas fa-long-arrow-alt-left" onclick="func2  ()"></i>
+          </div>
+        </article>
+      </section>
+
+      <section id="procesos">
+        <article>
+          <h1>
+            Procesos ágiles y flexibles, esa es nuestra forma de trabajo.
+            <br />
+            <span>—</span>
+          </h1>
+          <br />
           <p>
-            No siempre estamos en búsqueda laboral activa pero lo que no es para
-            hoy puede ser para mañana.
+            Detrás de cada contratación hay un contexto que deben ser atendido
+            para lograr los objetivos eficientemente. Disminuir tiempos sin
+            perder calidad es nuestra especialidad.
           </p>
-          <p>
-            No hace falta que cargues tu CV, escríbenos y nosotros nos
-            encargamos del resto
-          </p>
+        </article>
+      </section>
+
+      <section id="contacto">
+        <h1>
+          Contacto
+        </h1>
+        <div class="wrapper">
+          <div class="datos">
+            <h1>
+              Conversemos
+            </h1>
+            <h3>
+              Encontremos juntos las diferentes oportunidades de trabajo que
+              existen alrededor tuyo. Reunimos a la persona con el trabajo
+              soñado y a las empresas con el talento deseado.
+            </h3>
+          </div>
+
           <form>
-            <legend>Contacto</legend>
             <input
               class="input"
               name="name"
@@ -167,86 +226,32 @@
               class="input"
               cols="30"
               rows="2"
-              placeholder="Contanos un poco sobre vos"
+              placeholder="Contanos un poco sobre Vos"
             ></textarea
             ><br />
-            <input name="democheckbox" type="checkbox" value="1" /> Deseo que me
-            contactes telefonicamente<br />
             <button type="submit" value="Submit">Submit</button>
           </form>
-          <i class="fas fa-long-arrow-alt-left" onclick="func2  ()"></i>
         </div>
-      </article>
-    </section>
-
-    <section id="procesos">
-      <article>
-        <h1>
-          Procesos ágiles y flexibles, esa es nuestra forma de trabajo.
-          <br />
-          <span>—</span>
-        </h1>
-        <br />
-        <p>
-          Detrás de cada contratación hay un contexto que deben ser atendido
-          para lograr los objetivos eficientemente. Disminuir tiempos sin perder
-          calidad es nuestra especialidad.
-        </p>
-      </article>
-    </section>
-
-    <section id="contacto">
-      <h1>
-        Contacto
-      </h1>
-      <div class="wrapper">
-        <div class="datos">
-          <h1>
-            Conversemos
-          </h1>
-          <h3>
-            Encontremos juntos las diferentes oportunidades de trabajo que
-            existen alrededor tuyo. Reunimos a la persona con el trabajo soñado
-            y a las empresas con el talento deseado.
+      </section>
+      <footer>
+        <a href="#header"
+          ><img src="images/logoByN2Lineas" alt="logo" class="logo-footer"
+        /></a>
+        <a href="mailto:hola@linkshr.com.ar"
+          ><h3>
+            <span style="font-variant:small-caps">Email</span><br />
+            hola@linkshr.com.ar
           </h3>
-        </div>
-
-        <form>
-          <input
-            class="input"
-            name="name"
-            type="text"
-            placeholder="Nombre completo"
-          /><br />
-          <textarea
-            class="input"
-            cols="30"
-            rows="2"
-            placeholder="Contanos un poco sobre Vos"
-          ></textarea
-          ><br />
-          <button type="submit" value="Submit">Submit</button>
-        </form>
-      </div>
-    </section>
-    <footer>
-      <a href="#header"
-        ><img src="images/logoByN2Lineas" alt="logo" class="logo-footer"
-      /></a>
-      <a href="mailto:hola@linkshr.com.ar"
-        ><h3>
-          <span style="font-variant:small-caps">Email</span><br />
-          hola@linkshr.com.ar
-        </h3>
-      </a>
-      <a href="https://www.linkedin.com/company/linkshr/" target="blank"
-        ><img
-          src="images/linkedin-brands.svg"
-          class="animated fadeInRightBig"
-          style="height: 22px;
-    filter: invert(2);"
-      /></a>
-    </footer>
+        </a>
+        <a href="https://www.linkedin.com/company/linkshr/" target="blank"
+          ><img
+            src="images/linkedin-brands.svg"
+            class="animated fadeInRightBig"
+            style="height: 22px;
+filter: invert(2);"
+        /></a>
+      </footer>
+    </div>
 
     <script>
       let empresa = document.getElementById("empresa");
@@ -298,11 +303,11 @@
       }
 
       function hidenav() {
-  // if(screen.width <= 820px) {
-  let navToggle = document.getElementById("nav-toggle");
-  // }
-  navToggle.click();
-}
+        // if(screen.width <= 820px) {
+        let navToggle = document.getElementById("nav-toggle");
+        // }
+        navToggle.click();
+      }
     </script>
   </body>
 </html>

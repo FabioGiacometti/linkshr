@@ -447,6 +447,7 @@ footer {
   }
   header {
     position: fixed !important;
+    z-index: 5;
   }
   header .linkedin {
     display: none;
@@ -454,6 +455,11 @@ footer {
   }
   #navbar {
     display: none;
+    padding-top: 50px;
+  }
+  #navbar li {
+    margin-bottom: 50px;
+    font-size: 2em;
   }
   .nav-toggle:checked ~ #navbar {
     display: -webkit-box;
@@ -468,11 +474,17 @@ footer {
             align-items: baseline;
     position: absolute !important;
     padding: 0px 0px 121px 86px;
-    top: 65px;
+    top: 80px;
     left: 0;
     height: 100vh;
     width: 100%;
     background-color: black;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .nav-toggle-label {
     position: absolute;
