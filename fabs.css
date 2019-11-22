@@ -1,0 +1,28 @@
+.fabs{
+    position: fixed!important;
+    bottom:20px;
+    width: 100%;
+    height: auto;
+    /* background: blue; */
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.fa-b{
+    height: 80px;
+    width: 80px;
+    background: #17c0eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%
+    
+}
+i{
+    font-size: 3em;
+}
+.hidden{
+    bottom: 20px;
+    right: 20px;
+    position: absolute!important;
+}

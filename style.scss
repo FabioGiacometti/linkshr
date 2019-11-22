@@ -27,6 +27,11 @@ body {
     align-items: center;
   }
 }
+.inverted-color{
+  // filter: invert(1);
+  background-color: black;
+  
+}  
 
 .guion {
   position: relative;
@@ -36,11 +41,13 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  position: absolute;
+  position: fixed!important;
   width: 100%;
   /* height: 70px; */
   padding: 30px 80px;
   align-content: center;
+  z-index: 5;
+  transition: background 500ms;
   ul {
     display: flex;
     width: 50%;
@@ -366,6 +373,7 @@ footer {
   }
   header{
     position: fixed!important;
+    padding: 30px 35px!important;
     z-index: 5;
     .linkedin{
       display:none;
@@ -387,7 +395,7 @@ footer {
     flex-direction: column;
     align-items: baseline;
     position: absolute!important;
-    padding: 0px 0px 121px 86px;
+    padding: 0px 0px 121px 0;
     top: 80px;
     left: 0;
     height: 100vh;
@@ -398,14 +406,18 @@ footer {
   }
 
   .nav-toggle-label {
-    position: absolute;
+    position: absolute!important;
     top: 0;
-    right: 0;
-    margin-right: 24px;
+    right: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
+  
 
   .nav-toggle-label span,
   .nav-toggle-label span::before,
@@ -431,6 +443,8 @@ footer {
     top: 7px;
   }
 
+  .fa-long-arrow-alt-left:before {
+    display: none;}
   // header{
   //   position: fixed!important;
   //   padding: 20px 30px!important  ;
@@ -444,6 +458,8 @@ footer {
     }
   }
   body {
+    width:100vw;
+
     section {
       height: auto !important;
     }

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="animate.css" />
+    <link rel="stylesheet" href="fabs.css" />
     <script
       src="https://kit.fontawesome.com/c3c84e4d37.js"
       crossorigin="anonymous"
@@ -237,8 +238,8 @@
         <a href="#header"
           ><img src="images/logoByN2Lineas" alt="logo" class="logo-footer"
         /></a>
-        <a href="mailto:hola@linkshr.com.ar"
-          ><h3>
+        <a href="mailto:hola@linkshr.com.ar">
+          <h3>
             <span style="font-variant:small-caps">Email</span><br />
             hola@linkshr.com.ar
           </h3>
@@ -251,6 +252,19 @@
 filter: invert(2);"
         /></a>
       </footer>
+      <div class="fabs">
+        <a href="tel:5493513162324" class="fa-b telefono"
+          ><i class="fas fa-phone"></i
+        ></a>
+        <a href="mailto:hola@linkshr.com.ar" class="fa-b mail"
+          ><i class="far fa-envelope-open"></i
+        ></a>
+        <a
+          href="https://wa.me/5493513162324?text=Hola%21%20Estoy%20intereado%20en%20contratar%20tus%20servicios"
+          class="fa-b whatsapp"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+      </div>
     </div>
 
     <script>
@@ -258,10 +272,8 @@ filter: invert(2);"
       let profesional = document.getElementById("profesional");
       let buttonProfesional = document.getElementById("buttonProfesional");
       let buttonEmpresa = document.getElementById("buttonEmpresa");
-
-      function scrol() {
-        console.log("hola!");
-      }
+      let header = document.getElementById("header");
+      let fabs = document.getElementsByClassName("fa-b");
 
       function func() {
         profesional.classList.toggle("escondido");
@@ -290,15 +302,21 @@ filter: invert(2);"
       };
 
       function scrollFunction() {
-        if (
-          document.body.scrollTop > 80 ||
-          document.documentElement.scrollTop > 80
-        ) {
-          document.getElementById("navbar").style.padding = "30px 10px";
-          document.getElementById("logo").style.fontSize = "25px";
-        } else {
-          document.getElementById("navbar").style.padding = "80px 10px";
-          document.getElementById("logo").style.fontSize = "35px";
+        if (document.documentElement.scrollTop > 10) {
+          header.classList.add("inverted-color");
+        } else if (document.documentElement.scrollTop < 10) {
+          header.classList.remove("inverted-color");
+          // document.getElementById("logo").style.fontSize = "35px";
+        }
+        // console.log(document.getElementById("header").style.background)
+        // console.log('top: '  + (window.pageYOffset || document.documentElement.scrollTop))
+      }
+
+      function hideFabs() {
+        // fabs.classList.add("hidden")
+        for (var i = 0; i < fabs.length; i++) {
+          fabs[i].classList.add("shown");
+          console.log(fabs[i].className);
         }
       }
 
