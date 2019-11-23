@@ -381,34 +381,43 @@ footer {
     }
   }
 
+  .desplegado {
+    margin-left: 0px!important
+  }
+  
   #navbar {
-    display: none;
+    margin-left:100vw;
     padding-top: 50px;
     li{
       margin-bottom: 50px;
       font-size: 2em
     }
-  }
-
-  .nav-toggle:checked ~ #navbar {
     display: flex;
     flex-direction: column;
     align-items: baseline;
     position: absolute!important;
-    padding: 0px 0px 121px 0;
+    padding: 60px 0 121px 40px;
     top: 80px;
     left: 0;
     height: 100vh;
     width: 100%;
     background-color: black;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
+    transition: margin-left 400ms cubic-bezier(0.68, 0, 0.32, 0.96);
+    a{
+      font-size: 1em
+    }
   }
 
   .nav-toggle-label {
+    height: 100%!important;
+    width: 15%;
+    padding: 15px;
+    align-self: auto;
     position: absolute!important;
     top: 0;
-    right: 50px;
+    right: 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

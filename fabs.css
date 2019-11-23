@@ -1,28 +1,53 @@
-.fabs{
+#fabs{
     position: fixed!important;
-    bottom:20px;
+    bottom:0px;
     width: 100%;
     height: auto;
     /* background: blue; */
     display: flex;
-    justify-content: space-evenly;
-
+    justify-content: space-between;
+    padding: 20px 40px;
+    transition: margin-left 800ms ease-out;
+    
 }
+
+
+#fabs-toggle {
+    position: fixed!important;
+    bottom: 20px;
+    right: 40px;
+    padding: 17px;
+    align-self: center;
+    color: white;
+    font-size: 1.9em;
+    transition: bottom 200ms ease-in-out, transform 200ms ease-in-out, background-color 200ms;
+    
+}
+
+.up{
+    bottom:100px!important;
+    transform: rotate(90deg);
+    color: dimgrey;
+    transition-delay: 200ms
+}
+
 .fa-b{
-    height: 80px;
-    width: 80px;
-    background: #17c0eb;
+    height: 60px;
+    width: 60px;
+    background: #17ebd9;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%
+    border-radius: 50%;
+    /* transition: margin-left 200ms ease-in 200ms */
     
 }
 i{
-    font-size: 3em;
+    font-size: 2.5em;
 }
 .hidden{
-    bottom: 20px;
-    right: 20px;
-    position: absolute!important;
+    margin-left:100vh;
+    /* bottom: 20px; */
+    /* right: 20px; */
+    /* position: absolute!important; */
 }

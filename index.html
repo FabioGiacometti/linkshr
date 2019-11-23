@@ -25,16 +25,16 @@
         class="logo animated fadeInDown"
       />
 
-      <input id="nav-toggle" type="checkbox" class="nav-toggle" />
+      <!-- <input id="nav-toggle" type="checkbox" class="nav-toggle" /> -->
 
-      <ul id="navbar" class="animated fadeInRightBig">
-        <li><a href="#nosotros" onclick="hidenav()">Nosotros</a></li>
-        <li><a href="#soy" onclick="hidenav()">Soy Empresa</a></li>
-        <li><a href="#soy" onclick="hidenav()">Soy Profesional</a></li>
-        <li><a href="#contacto" onclick="hidenav()">Contacto</a></li>
+      <ul id="navbar" class="">
+        <li><a href="#nosotros" onclick="showNavBar()">Nosotros</a></li>
+        <li><a href="#soy" onclick="showNavBar()">Soy Empresa</a></li>
+        <li><a href="#soy" onclick="showNavBar()">Soy Profesional</a></li>
+        <li><a href="#contacto" onclick="showNavBar()">Contacto</a></li>
       </ul>
 
-      <label for="nav-toggle" class="nav-toggle-label" id="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" id="nav-toggle" onclick="showNavBar()" >
         <span></span>
       </label>
 
@@ -252,80 +252,25 @@
 filter: invert(2);"
         /></a>
       </footer>
-      <div class="fabs">
+      <div id="fabs" class="hidden">
         <a href="tel:5493513162324" class="fa-b telefono"
-          ><i class="fas fa-phone"></i
+          ><i class="fas fa-phone icon"></i
         ></a>
         <a href="mailto:hola@linkshr.com.ar" class="fa-b mail"
-          ><i class="far fa-envelope-open"></i
+          ><i class="far fa-envelope-open icon"></i
         ></a>
         <a
           href="https://wa.me/5493513162324?text=Hola%21%20Estoy%20intereado%20en%20contratar%20tus%20servicios"
           class="fa-b whatsapp"
-          ><i class="fab fa-whatsapp"></i
+          ><i class="fab fa-whatsapp icon"></i
         ></a>
+        
       </div>
+      <i id="fabs-toggle" class="fas fa-chevron-left fa-b" onclick="hideFabs()"></i>
     </div>
 
-    <script>
-      let empresa = document.getElementById("empresa");
-      let profesional = document.getElementById("profesional");
-      let buttonProfesional = document.getElementById("buttonProfesional");
-      let buttonEmpresa = document.getElementById("buttonEmpresa");
-      let header = document.getElementById("header");
-      let fabs = document.getElementsByClassName("fa-b");
-
-      function func() {
-        profesional.classList.toggle("escondido");
-        // console.log(buttonEmpresa.innerHTML)
-        if (buttonEmpresa.innerHTML == "Ver Mas") {
-          buttonEmpresa.innerHTML = "Ver Menos";
-        } else {
-          buttonEmpresa.innerHTML = "Ver Mas";
-        }
-        // console.log(func);
-      }
-
-      function func2() {
-        profesional.classList.toggle("full");
-        if (buttonProfesional.innerHTML == "Ver Mas") {
-          buttonProfesional.innerHTML = "Ver Menos";
-        } else {
-          buttonProfesional.innerHTML = "Ver Mas";
-        }
-        // empresa.classList.toggle("oscuro");
-        // console.log(func2);
-      }
-
-      window.onscroll = function() {
-        scrollFunction();
-      };
-
-      function scrollFunction() {
-        if (document.documentElement.scrollTop > 10) {
-          header.classList.add("inverted-color");
-        } else if (document.documentElement.scrollTop < 10) {
-          header.classList.remove("inverted-color");
-          // document.getElementById("logo").style.fontSize = "35px";
-        }
-        // console.log(document.getElementById("header").style.background)
-        // console.log('top: '  + (window.pageYOffset || document.documentElement.scrollTop))
-      }
-
-      function hideFabs() {
-        // fabs.classList.add("hidden")
-        for (var i = 0; i < fabs.length; i++) {
-          fabs[i].classList.add("shown");
-          console.log(fabs[i].className);
-        }
-      }
-
-      function hidenav() {
-        // if(screen.width <= 820px) {
-        let navToggle = document.getElementById("nav-toggle");
-        // }
-        navToggle.click();
-      }
+    <script src="main.js">
+      
     </script>
   </body>
 </html>
