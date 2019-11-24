@@ -1,4 +1,9 @@
 #fabs{
+    display: none;
+}
+
+@media (max-width: 720px){
+    #fabs{
     position: fixed!important;
     bottom:0px;
     width: 100%;
@@ -8,7 +13,6 @@
     justify-content: space-between;
     padding: 20px 40px;
     transition: margin-left 800ms ease-out;
-    
 }
 
 
@@ -50,4 +54,4 @@ i{
     /* bottom: 20px; */
     /* right: 20px; */
     /* position: absolute!important; */
-}
+}}
