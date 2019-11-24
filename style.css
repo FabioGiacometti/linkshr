@@ -28,7 +28,7 @@ body section {
 }
 
 .inverted-color {
-  background-color: #008cff;
+  background-color: #0085f1;
   -webkit-box-shadow: 0px 2px 2px 0px #007be0;
           box-shadow: 0px 2px 2px 0px #007be0;
 }
@@ -39,6 +39,7 @@ body section {
 }
 
 header {
+  background-color: #0085f100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
