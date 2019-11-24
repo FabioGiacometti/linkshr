@@ -5,13 +5,9 @@
 @media (max-width: 720px){
     #fabs{
         position: fixed!important;
-        bottom: 0px;
-        width: 100%;
-        height: auto;
         display: flex;
-        justify-content: space-between;
-        padding: 20px 80px 40px 0px;
-        transition: margin-left 800ms ease-out;
+        justify-content: flex-start;
+        width: 100%
     }
 
 

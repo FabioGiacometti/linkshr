@@ -484,8 +484,8 @@ footer {
     top: 80px;
     left: 0;
     height: 100vh;
-    width: 100%;
-    background-color: #0072ff;
+    width: 100vw;
+    background: linear-gradient(135deg, #03a9f4 6%, #e91e63 110%);
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -501,6 +501,9 @@ footer {
     font-size: 1.8em;
     width: 100%;
     border-bottom: 1px solid white;
+  }
+  #navbar li:nth-child(1) {
+    margin-top: 0;
   }
   #navbar li:nth-child(5) {
     border-bottom: 0px;
