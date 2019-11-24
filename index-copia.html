@@ -18,12 +18,12 @@
   </head>
 
   <body>
-    <a href="#nosotros"><header id="header" class="animated fadeIn">
-    <img
-    src="images/LogoByN1Linea.png"
-    alt=""
-    class="logo animated fadeInDown"
-    /></a>
+    <header id="header" class="animated fadeIn">
+      <img
+        src="images/LogoByN1Linea.png"
+        alt=""
+        class="logo animated fadeInDown"
+      />
 
       <!-- <input id="nav-toggle" type="checkbox" class="nav-toggle" /> -->
 
@@ -32,37 +32,9 @@
         <li><a href="#soy" onclick="showNavBar()">Soy Empresa</a></li>
         <li><a href="#soy" onclick="showNavBar()">Soy Profesional</a></li>
         <li><a href="#contacto" onclick="showNavBar()">Contacto</a></li>
-        <li>
-          <div id="fabs" class="contact-nav">
-            <a href="tel:5493513162324" class="fa-b telefono"
-              ><i class="fas fa-phone icon"></i
-            ></a>
-            <a href="mailto:hola@linkshr.com.ar" class="fa-b mail"
-              ><i class="far fa-envelope-open icon"></i
-            ></a>
-            <a
-              href="https://wa.me/5493513162324?text=Hola%21%20Estoy%20intereado%20en%20contratar%20tus%20servicios"
-              class="fa-b whatsapp"
-              ><i class="fab fa-whatsapp icon"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/company/linkshr/"
-              class="fa-b"
-              target="blank"
-              ><img
-                src="images/linkedin-brands.svg"
-                style="filter: invert(1);"
-            /></a>
-          </div>
-        </li>
       </ul>
 
-      <label
-        for="nav-toggle"
-        class="nav-toggle-label"
-        id="nav-toggle"
-        onclick="showNavBar()"
-      >
+      <label for="nav-toggle" class="nav-toggle-label" id="nav-toggle" onclick="showNavBar()" >
         <span></span>
       </label>
 
@@ -292,9 +264,13 @@ filter: invert(2);"
           class="fa-b whatsapp"
           ><i class="fab fa-whatsapp icon"></i
         ></a>
+        
       </div>
+      <i id="fabs-toggle" class="fas fa-chevron-left fa-b" onclick="hideFabs()"></i>
     </div>
 
-    <script src="main.js"></script>
+    <script src="main.js">
+      
+    </script>
   </body>
 </html>
