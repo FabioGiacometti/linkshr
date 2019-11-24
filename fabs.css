@@ -4,16 +4,15 @@
 
 @media (max-width: 720px){
     #fabs{
-    position: fixed!important;
-    bottom:0px;
-    width: 100%;
-    height: auto;
-    /* background: blue; */
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 40px;
-    transition: margin-left 800ms ease-out;
-}
+        position: fixed!important;
+        bottom: 0px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 80px 40px 0px;
+        transition: margin-left 800ms ease-out;
+    }
 
 
 #fabs-toggle {
@@ -38,7 +37,7 @@
 .fa-b{
     height: 60px;
     width: 60px;
-    background: #17ebd9;
+    /* background: #17ebd9; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,8 +45,13 @@
     /* transition: margin-left 200ms ease-in 200ms */
     
 }
-i{
-    font-size: 2.5em;
+
+.fa-b i{
+    font-size: 1em;
+}
+.fa-b img{
+        height:30px;
+        width: 30px;
 }
 .hidden{
     margin-left:100vw;
