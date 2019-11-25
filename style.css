@@ -164,6 +164,7 @@ header .nav-toggle {
   margin-top: 20px;
   margin-right: 20px;
   width: 280px;
+  height: 100%;
   border: 1px solid #d6c5c5;
   -webkit-box-sizing: padding-box;
           box-sizing: padding-box;
