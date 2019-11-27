@@ -40,13 +40,13 @@ body {
 }
 
 header {
-  background-color: #0085f100;
+  // background-color: #0085f100;
   display: flex;
   justify-content: space-between;
   position: fixed !important;
   width: 100%;
   /* height: 70px; */
-  padding: 30px 80px;
+  padding: 20px 80px;
   align-content: center;
   z-index: 5;
   transition: background 500ms;
@@ -203,6 +203,8 @@ h1 {
   text-shadow: var(--text-shadow);
 }
 form {
+  max-width:800px;
+  align-self: flex-start;
   .input {
     width: 100%;
   }
@@ -321,7 +323,8 @@ form {
     /* background: var(--gradient); */
     // z-index: 999;
     background-size: cover;
-    position: absolute;
+    background-position: center;
+    position: absolute!important;
     z-index: -1;
     filter: grayscale(0.5);
     left: 0;
@@ -525,7 +528,7 @@ footer {
   footer {
     padding: 20px 20px!important;
     .logo-footer{
-      height: 35px
+      height: 30px!important
     }
     }
   }

@@ -41,7 +41,7 @@ header {
   position: absolute;
   width: 100%;
   /* height: 70px; */
-  padding: 30px 80px;
+  padding: 25px 80px;
   -ms-flex-line-pack: center;
       align-content: center;
 }
@@ -62,7 +62,7 @@ header ul {
 }
 
 .logo-footer {
-  height: 20px;
+  height: 30px;
 }
 
 #nosotros:after {
