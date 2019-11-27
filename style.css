@@ -29,8 +29,8 @@ body section {
 
 .inverted-color {
   background-color: #0085f1;
-  -webkit-box-shadow: 0px 2px 2px 0px #007be0;
-          box-shadow: 0px 2px 2px 0px #007be0;
+  -webkit-box-shadow: 0px 1px 1px 1px #002d523a;
+          box-shadow: 0px 1px 1px 1px #002d523a;
 }
 
 .guion {
@@ -73,11 +73,7 @@ header .nav-toggle {
 }
 
 .logo {
-  height: 23px;
-}
-
-.logo-footer {
-  height: 50px;
+  height: 20px;
 }
 
 #nosotros:after {
@@ -189,6 +185,9 @@ header .nav-toggle {
 
 #slider .card img {
   opacity: 0.3;
+  display: block;
+  margin: 30px 0px;
+  max-width: 50%;
 }
 
 #slider span {
